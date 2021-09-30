@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,464&display=swap");
+
+body {
+  background: linear-gradient(230.85deg, #3e2723 27.26%, #ff80ab 96.03%);
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  background: #ffebee;
+  color: #1c1c1c;
+  margin: 84px;
+  padding: 84px;
+  box-shadow: 6px 6px 6px #1c1c1c;
+  border-radius: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  border: 2px solid #1c1c1c;
+  border-radius: 460px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+  max-height: 190px;
+}
+
+.info {
+  margin-left: 27px;
+}
+
+.info h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.info h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.info a img {
+  justify-content: space-between;
+  max-block-size: 35px;
+  margin-right: 10px;
+  transition: 0.25s;
+}
+
+.info img:hover {
+  transform: scale(1.17);
+}
+
+.tema button {
+  align-self: flex-end;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 16px;
+  background: #ffebee;
+  box-sizing: border-box;
+  border-radius: 23px;
+  border: 5px double #c51162;
+  color: #1c1c1c;
+}
+
+.tema button:hover {
+  background: #eceff1;
+}
+
+.winter {
+  background: linear-gradient(236.85deg, #263238 27.26%, #b388ff 96.03%);
+}
+
+.winter .container {
+  background: #1c1c1c;
+  color: #ffebee;
+}
+
+.winter .perfil-foto {
+  border: 2px solid #ffebee;
+}
+
+.winter .projetos,
+.winter .conquistas {
+  background: linear-gradient(230.65deg, #b39ddb 27.49%, #607d8b 83.19%);
+}
+
+.winter .projetos a {
+  color: #aa00ff;
+}
+
+.winter .tema button {
+  background: #1c1c1c;
+  box-sizing: border-box;
+  border: 5px double #aa00ff;
+  color: #ffebee;
+}
+
+.winter .tema button:hover {
+  background: #3e2723;
+}
+
+.winter ::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+
+.winter ::-webkit-scrollbar-thumb {
+  background: #aa00ff;
+  border: 1.8px solid #aa00ff;
+}
+
+main {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.projetos {
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 34px;
+  align-items: justify;
+  background: linear-gradient(230.65deg, #f48fb1 27.49%, #8d6e63 83.19%);
+  box-shadow: inset 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 19px;
+}
+
+.projetos ul {
+  color: #1c1c1c;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  list-style: 0;
+  padding-left: 0;
+}
+
+.projetos li {
+  list-style-type: none;
+  padding: 22px;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: 350px;
+  line-height: 2em;
+}
+
+.projetos a {
+  color: #c51162;
+  text-decoration: none;
+}
+
+.conquistas {
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 34px;
+  align-items: center;
+  background: linear-gradient(230.65deg, #f48fb1 27.49%, #8d6e63 83.19%);
+  box-shadow: inset 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 19px;
+}
+
+.conquistas ul {
+  color: #1c1c1c;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c51162;
+  border: 1.8px solid #c51162;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1c;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffebee;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  margin: 15px 0px;
+}
